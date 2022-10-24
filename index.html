@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>IPFS Configuration</title>
+  </head>
+  <body>
+    <aside class="aside-desktop">
+      <div class="logo-wrapper">
+        <img src="/assests/logo.png" alt="logo" />
+        <h1>Chameleon</h1>
+      </div>
+
+      <div class="link-wrapper">
+        <div class="single-link">
+          <img src="/assests/open-data.png" alt="" />
+          <p>Open Data Library</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/data-con-icon.png" alt="" />
+          <p>Data Contribution</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/balcahau-icon.png" alt="" />
+          <p>Balcalhau COD</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/data-manager-icon.png" alt="" />
+          <p>Data Manager</p>
+        </div>
+      </div>
+
+      <div class="btn-wrapper">
+        <button class="aside-btn">
+          <img src="/assests/ipsconfig-icon.png" alt="" />
+          <p>IPFS Configuration</p>
+        </button>
+      </div>
+    </aside>
+
+    <aside class="aside-mobile">
+      <i class="fa-solid fa-times fa-2xl"></i>
+      <div class="logo-wrapper">
+        <img src="/assests/logo.png" alt="logo" />
+        <h1>Chameleon</h1>
+      </div>
+
+      <div class="link-wrapper">
+        <div class="single-link">
+          <img src="/assests/open-data.png" alt="" />
+          <p>Open Data Library</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/data-con-icon.png" alt="" />
+          <p>Data Contribution</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/balcahau-icon.png" alt="" />
+          <p>Balcalhau COD</p>
+        </div>
+        <div class="single-link">
+          <img src="/assests/data-manager-icon.png" alt="" />
+          <p>Data Manager</p>
+        </div>
+      </div>
+
+      <div class="btn-wrapper">
+        <button class="aside-btn">
+          <img src="/assests/ipsconfig-icon.png" alt="" />
+          <p>IPFS Configuration</p>
+        </button>
+      </div>
+    </aside>
+
+    <main>
+      <i class="fa-solid fa-bars fa-2xl"></i>
+
+      <div class="wallet-address-wrapper">
+        <button class="wallet-btn">
+          <img src="/assests/address-icon.png" alt="" />
+          <p>0x4D0A...E7C96</p>
+        </button>
+      </div>
+
+      <div class="main-text">
+        <h2>IPFS Configuration</h2>
+        <div></div>
+      </div>
+
+      <p class="sub-text">
+        Before contributing topography data to Chameleon, you need to configure
+        your IPFS storage tool. The IPFS storage tool will be use to store your
+        topography data, metadata, additional files, and Bacalhau COD
+        computation result. Currently, Chameleon only supports Pinata.
+      </p>
+
+      <form>
+        <div class="input-wrapper">
+          <label for="key">Pinata API Key</label><br />
+          <input required id="key" type="text" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="secrete">Pinata API Secret</label><br />
+          <input required id="secrete" type="text" />
+        </div>
+
+        <button class="btn-save">Save</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
